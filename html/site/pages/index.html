@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trang chủ - Mỹ Phẩm Goda</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="../images/logo.jpg" />
+        <link rel="stylesheet" href="../vendor/fontawesome-free-5.11.2-web/css/all.min.css">
+        <link rel="stylesheet" href="../vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="../vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../vendor/star-rating/css/star-rating.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../vendor/jquery.min.js"></script>
+        <script src="../vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="../vendor/star-rating/js/star-rating.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="../vendor/format/number_format.js"></script>
+        <script type="text/javascript" src="../js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- use for ajax -->
+            <input type="hidden" id="reference" value=""> 
+            <!-- Top Navbar -->
+            <div class="top-navbar container-fluid">
+                <div class="menu-mb">
+                    <a href="javascript:void(0)" class="btn-close" onclick="closeMenuMobile()">×</a>
+                    <a class="active" href="index.html">Trang chủ</a>
+                    <a href="san-pham.html">Sản phẩm</a>
+                    <a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a>
+                    <a href="chinh-sach-thanh-toan.html">Chính sách thanh toán</a>
+                    <a href="chinh-sach-giao-hang.html">Chính sách giao hàng</a>
+                    <a href="lien-he.html">Liên hệ</a>
+                </div>
+                <div class="row">
+                    <div class="hidden-lg hidden-md col-sm-2 col-xs-1">
+                        <span class="btn-menu-mb" onclick="openMenuMobile()"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
+                    </div>
+                    <div class="col-md-6 hidden-sm hidden-xs">
+                        <ul class="list-inline">
+                            <li><a href="https://www.facebook.com/HocLapTrinhWebTaiNha.ThayLoc"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-xs-11">
+                        <ul class="list-inline pull-right top-right">
+                            <li class="account-login">
+                                <a href="javascript:void(0)" class="btn-register">Đăng Ký</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="btn-login">Đăng Nhập  </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End top navbar -->
+            <!-- Header -->
+            <div class="container">
+                <div class="row">
+                    <!-- LOGO -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 logo">
+                        <a href="#"><img src="../images/goda450x170_1.jpg" class="img-responsive"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 hidden-sm hidden-xs call-action">
+                        <a href="#"><img src="../images/godakeben450x170.jpg" class="img-responsive"></a>
+                    </div>
+                    <!-- HOTLINE AND SERCH -->
+                    <div class="col-lg-4 col-md-4 hotline-search">
+                        <div>
+                            <p class="hotline-phone"><span><strong>Hotline: </strong><a href="tel:0932.538.468">0932.538.468</a></span></p>
+                            <p class="hotline-email"><span><strong>Email: </strong><a href="mailto:nguyenhuulocla2006@gmail.com">nguyenhuulocla2006@gmail.com</a></span></p>
+                        </div>
+                        <form class="header-form" action="">
+                            <div class="input-group">
+                                <input type="search" class="form-control search" placeholder="Nhập từ khóa tìm kiếm" name="search" autocomplete="off" value="">
+                                <div class="input-group-btn">
+                                    <button class="btn bt-search bg-color" type="submit"><i class="fa fa-search" style="color:#fff"></i>
+                                    </button>
+                                </div>
+                                <input type="hidden" name="c" value="product">
+                                <input type="hidden" name="a" value="list">
+                            </div>
+                            <div class="search-result">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End header -->
+        </header>
+        <!-- NAVBAR DESKTOP-->
+        <nav class="navbar navbar-default desktop-menu">
+            <div class="container">
+                <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
+                    <li class="active">
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li ><a href="san-pham.html">Sản phẩm </a></li>
+                    <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+                    <li><a href="chinh-sach-thanh-toan.html">Chính sách thanh toán</a></li>
+                    <li><a href="chinh-sach-giao-hang.html">Chính sách giao hàng</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                </ul>
+                <span class="hidden-lg hidden-md experience">Trải nghiệm cùng sản phẩm của Goda</span>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="cart"><a href="javascript:void(0)" class="btn-cart-detail" title="Giỏ Hàng"><i class="fa fa-shopping-cart"></i> <span class="number-total-product">6</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="slideshow container-fluid">
+            <div class="row">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="../images/slider1.jpg" alt="slider 1">
+                        </div>
+
+                        <div class="item">
+                            <img src="../images/slider_2.jpg" alt="slider 2">
+                        </div>
+
+                        <div class="item">
+                            <img src="../images/slider_3.jpg" alt="slider 3">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- END SLIDESHOW -->
+        <!-- SERVICES -->
+        <div class="top-services container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 item item-1">
+                    <div class="item-inner">
+                        <a class="item-inline" title="7 NGÀY ĐỔI TRẢ" href="#">
+                            <span class="title-sv">7 NGÀY ĐỔI TRẢ</span>
+                            <span>Chăm sóc khách hàng cực tốt</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 item item-2">
+                    <div class="item-inner">
+                        <a class="item-inline" title="MIỄN PHÍ SHIP" href="#">
+                            <span class="title-sv">MIỄN PHÍ SHIP</span>
+                            <span>Với dịch vụ giao hàng tiết kiệm</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 item item-3">
+                    <div class="item-inner">
+                        <a class="item-inline" title="BÁN BUÔN NHƯ BÁN SỈ" href="#">
+                            <span class="title-sv">BÁN BUÔN NHƯ BÁN SỈ</span>
+                            <span>Giá hợp lý nhất quả đất</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 item item-4">
+                    <div class="item-inner">
+                        <a class="item-inline" title="CHẤT LƯỢNG HÀNG ĐẦU" href="#">
+                            <span class="title-sv">CHẤT LƯỢNG HÀNG ĐẦU</span>
+                            <span>Chăm sóc bạn như người thân </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main id="maincontent" class="page-main">
+            <div class="container">
+                <div class="row equal">
+                    <div class="col-xs-12">
+                        <h4 class="home-title">Sản phẩm nổi bật</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/beaumoreSecretWhiteningCream10g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm trắng da 5 trong 1 Beaumore Secret Whitening Cream">Kem làm trắng da 5 trong 1 Beaumore Secret Whitening Cream</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-regular">200,000₫</span>
+                                    <span class="product-item-discount">190,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="2" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemLamSangVungDaBikini.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm sáng vùng da bikini Beaumore- 50ml">Kem làm sáng vùng da bikini Beaumore- 50ml</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">849,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemLuaLamDepDaBeaumore.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem lụa làm đẹp da Beaumore- 30ml">Kem lụa làm đẹp da Beaumore- 30ml</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">1,500,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="5" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/suaRuaMatNgheBeaumore100g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Sữa rửa mặt nghệ Beaumore Mới- 100g">Sữa rửa mặt nghệ Beaumore Mới- 100g</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">250,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="4" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal">
+                    <div class="col-xs-12">
+                        <h4 class="home-title">Sản phẩm mới nhất</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/beaumoreSecretWhiteningCream10g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm trắng da 5 trong 1 Beaumore Secret Whitening Cream">Kem làm trắng da 5 trong 1 Beaumore Secret Whitening Cream</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-regular">200,000₫</span>
+                                    <span class="product-item-discount">190,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="2" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/beaumoreContourEyeCream.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem dưỡng da vùng mắt Beaumore Contour Eye Cream- 10g">Kem dưỡng da vùng mắt Beaumore Contour Eye Cream- 10g</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">300,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="14" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemLamSangVungDaBikini.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm sáng vùng da bikini Beaumore- 50ml">Kem làm sáng vùng da bikini Beaumore- 50ml</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">849,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/suaTamSandrasShowerGel.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Sữa tắm Sandras Shower Gel">Sữa tắm Sandras Shower Gel</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">180,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="7" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal">
+                    <div class="col-xs-12">
+                        <h4 class="home-title">Kem Chống Nắng</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemChongNangBeaumore4in1.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm trắng bảo vệ da chống nắng dùng làm kem nền khi trang điểm Beaumore 4 in 1 Cream- 40ml">Kem làm trắng bảo vệ da chống nắng dùng làm kem nền khi trang điểm Beaumore 4 in 1 Cream- 40ml</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">604,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="12" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemChongNangSunDefense80ml.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html3" title="Kem chống nắng Beaumore - 80ml - giá sỉ​, giá tốt
+                                        Kem chống nắng Beaumore - 80ml">Kem chống nắng Beaumore - 80ml - giá sỉ​, giá tốt
+                                    Kem chống nắng Beaumore - 80ml</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">249,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="23" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html3" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal">
+                    <div class="col-xs-12">
+                        <h4 class="home-title">Kem Dưỡng Da</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/beaumoreContourEyeCream.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem dưỡng da vùng mắt Beaumore Contour Eye Cream- 10g">Kem dưỡng da vùng mắt Beaumore Contour Eye Cream- 10g</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">300,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="14" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemLamSangVungDaBikini.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm sáng vùng da bikini Beaumore- 50ml">Kem làm sáng vùng da bikini Beaumore- 50ml</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">849,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/suaTamSandrasShowerGel.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Sữa tắm Sandras Shower Gel">Sữa tắm Sandras Shower Gel</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">180,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="7" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/nhamSamSandrasBeauty20g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm trắng da và mờ nếp nhăn từ Nhân sâm Sandras Beauty- 20g ">Kem làm trắng da và mờ nếp nhăn từ Nhân sâm Sandras Beauty- 20g </a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">380,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="13" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal">
+                    <div class="col-xs-12">
+                        <h4 class="home-title">Kem Trị Mụn</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemTriMunNghePureTurmeric20g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html5" title="Kem trị mụn nghệ Nhật Beaumore Pure Turmeric Cream (Mới)- 20g ">Kem trị mụn nghệ Nhật Beaumore Pure Turmeric Cream (Mới)- 20g </a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">239,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="25" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html5" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal">
+                    <div class="col-xs-12">
+                        <h4 class="home-title">Kem Trị Thâm Nám</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/beaumoreSecretWhiteningCream10g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm trắng da 5 trong 1 Beaumore Secret Whitening Cream">Kem làm trắng da 5 trong 1 Beaumore Secret Whitening Cream</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-regular">200,000₫</span>
+                                    <span class="product-item-discount">190,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="2" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemPhaiNamVaTanNhanBeaumore.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm phai vết nám và tàn nhang Beaumore- 15g">Kem làm phai vết nám và tàn nhang Beaumore- 15g</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">249,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="16" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemTrangDaHoPhachBeaumore30g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm trắng da ngăn ngừa nám và tàn nhang từ hổ phách Beaumore- 30g">Kem làm trắng da ngăn ngừa nám và tàn nhang từ hổ phách Beaumore- 30g</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">520,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="15" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/kemLamMoNamNgayDemDoiMy.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Kem làm mờ nám Ngày Đêm Nám đôi Mỹ Beaumore- 10g x 2 hũ">Kem làm mờ nám Ngày Đêm Nám đôi Mỹ Beaumore- 10g x 2 hũ</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">901,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="19" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal">
+                    <div class="col-xs-12">
+                        <h4 class="home-title">Sữa Rửa Mặt</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/suaRuaMatHatMo120g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html4" title="Sữa rửa mặt hạt mơ Beaumore- 120g ">Sữa rửa mặt hạt mơ Beaumore- 120g </a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">180,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="24" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html4" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/suaRuaMatNgheBeaumore100g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Sữa rửa mặt nghệ Beaumore Mới- 100g">Sữa rửa mặt nghệ Beaumore Mới- 100g</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">250,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="4" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/suaRuamatHAAmino75g.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html2" title="Sữa rửa mặt HA Amino Beaumore- 75g">Sữa rửa mặt HA Amino Beaumore- 75g</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">520,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="22" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html2" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal">
+                    <div class="col-xs-12">
+                        <h4 class="home-title">Sữa Tắm</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/suaTamSandrasMychai250ml.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Sữa tắm Sandras Mỹ chai 250ml">Sữa tắm Sandras Mỹ chai 250ml</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">210,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="9" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img class="img-responsive" src="../images/aromaWhiteMaximumBeaumore250ml.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" href="chi-tiet-san-pham.html" title="Sữa tắm trắng Aroma White Maximum Beaumore- 250ml">Sữa tắm trắng Aroma White Maximum Beaumore- 250ml</a>
+                                </h5>
+                                <div class="product-item-price">
+                                    <span class="product-item-discount">180,000₫</span>            
+                                </div>
+                            </div>
+                            <div class="button-product-action clearfix">
+                                <div class="cart icon">
+                                    <a class="btn btn-outline-inverse buy" product-id="17" href="javascript:void(0)" title="Thêm vào giỏ">
+                                    Thêm vào giỏ <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="quickview icon">
+                                    <a class="btn btn-outline-inverse" href="chi-tiet-san-pham.html" title="Xem nhanh">
+                                    Xem chi tiết <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-4 list">
+                                <div class="footerLink">
+                                    <h4>Danh mục</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Kem Chống Nắng </a></li>
+                                        <li><a href="#">Kem Dưỡng Da </a></li>
+                                        <li><a href="#">Kem Trị Mụn </a></li>
+                                        <li><a href="#">Kem Trị Thâm Nám </a></li>
+                                        <li><a href="#">Sữa Rửa Mặt </a></li>
+                                        <li><a href="#">Sữa Tắm </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-4 list">
+                                <div class="footerLink">
+                                    <h4>Liên kết </h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="san-pham.html">Sản phẩm </a></li>
+                                        <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+                                        <li><a href="chinh-sach-thanh-toan.html">Chính sách thanh toán</a></li>
+                                        <li><a href="chinh-sach-giao-hang.html">Chính sách giao hàng </a></li>
+                                        <li><a href="lien-he.html">Liên hệ </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-4 list">
+                                <div class="footerLink">
+                                    <h4>Liên hệ với chúng tôi </h4>
+                                    <ul class="list-unstyled">
+                                        <li>Phone: 0932.538.468</li>
+                                        <li><a href="mailto:nguyenhuulocla2006@gmail.com">Mail: nguyenhuulocla2006@gmail.com</a></li>
+                                    </ul>
+                                    <ul class="list-inline">
+                                        <li><a href="https://www.facebook.com/HocLapTrinhWebTaiNha.ThayLoc"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+                                        <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 list">
+                                <div class="newsletter clearfix">
+                                    <h4>Bản tin</h4>
+                                    <p>Nhập Email của bạn để chúng tôi cung cấp thông tin nhanh nhất cho bạn về những sản phẩm mới!!</p>
+                                    <form action="" method="POST">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Nhập email của bạn.." name="email">
+                                            <button type="submit" class="btn btn-primary send pull-right">Gửi</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        <!-- BACK TO TOP -->
+        <div class="back-to-top" class="bg-color">▲</div>
+        <!-- END BACK TO TOP -->
+        <!-- REGISTER DIALOG -->
+        <div class="modal fade" id="modal-register" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-color">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title text-center">Đăng ký</h3>
+                    </div>
+                    <form action="#" method="POST" role="form">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="fullname"  placeholder="Họ và tên" required oninvalid="this.setCustomValidity('Vui lòng nhập tên của bạn')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" name="mobile" placeholder="Số điện thoại" required pattern="[0][0-9]{9,}"
+                                    oninvalid="this.setCustomValidity('Vui lòng nhập số điện thoại bắt đầu bằng số 0 và ít nhất 9 con số theo sau')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required oninvalid="this.setCustomValidity('Vui lòng nhập email')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Mật khẩu" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" oninvalid="this.setCustomValidity('Vui lòng nhập ít nhất 8 ký tự: số, chữ hoa, chữ thường')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="re-password" placeholder="Nhập lại mật khẩu" required autocomplete="off" autosave="off" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" oninvalid="this.setCustomValidity('Vui lòng nhập ít nhất 8 ký tự: số, chữ hoa, chữ thường')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="form-group g-recaptcha" data-sitekey="6Lcj07oUAAAAALAHcj_WdDa7Vykqzui3mSA5SIoe"></div>
+                            <input type="hidden" name="reference" value="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                            <button type="submit" class="btn btn-primary">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END REGISTER DIALOG -->
+        <!-- LOGIN DIALOG -->
+        <div class="modal fade" id="modal-login" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-color">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title text-center">Đăng nhập</h3>
+                        <!-- Google login -->
+                        <br>
+                        <div class="text-center">
+                            <a class="btn btn-primary google-login" href="#"><i class="fab fa-google"></i></i> Đăng nhập bằng Google</a>
+                            <!-- Facebook login -->
+                            <a class="btn btn-primary facebook-login" href="#"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</a>
+                        </div>
+                    </div>
+                    <form action="#" method="POST" role="form">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control" placeholder="Mật khẩu" required>
+                            </div>
+                            <input type="hidden" name="reference" value="">                          
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Đăng Nhập</button><br>
+                            <div class="text-left">
+                                <a href="javascript:void(0)" class="btn-register" >Bạn chưa là thành viên? Đăng kí ngay!</a>
+                                <a href="javascript:void(0)" class="btn-forgot-password">Quên Mật Khẩu?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END LOGIN DIALOG -->
+        <!-- FORTGOT PASSWORD DIALOG -->
+        <div class="modal fade" id="modal-forgot-password" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-color">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title text-center">Quên mật khẩu</h3>
+                    </div>
+                    <form action="#" method="POST" role="form">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input name="email" type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="hidden" name="reference" value="">
+                            <button type="submit" class="btn btn-primary">GỬI</button><br>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END FORTGOT PASSWORD DIALOG -->
+        <!-- CART DIALOG -->
+        <div class="modal fade" id="modal-cart-detail" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-color">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                        <h3 class="modal-title text-center">Giỏ hàng</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="page-content">
+                            <div class="clearfix hidden-sm hidden-xs">
+                                <div class="col-xs-1">
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="header">
+                                        Sản phẩm
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="header">
+                                        Đơn giá
+                                    </div>
+                                </div>
+                                <div class="label_item col-xs-3">
+                                    <div class="header">
+                                        Số lượng
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="header">
+                                        Thành tiền
+                                    </div>
+                                </div>
+                                <div class="lcol-xs-1">
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <hr>
+                                <div class="clearfix text-left">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-1">
+                                            <div><img class="img-responsive" src="../images/beaumoreSecretWhiteningCream10g.jpg" alt="Kem làm trắng da 5 trong 1 Beaumore Secret Whitening Cream "></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3"><a class="product-name" href="#">Kem làm trắng da 5 trong 1 Beaumore Secret Whitening Cream</a></div>
+                                        <div class="col-sm-6 col-md-2"><span class="product-item-discount">190,000₫</span></div>
+                                        <div class="col-sm-6 col-md-3"><input type="hidden" value="1"><input type="number" onchange="updateProductInCart(this,2)" min="1" value="1"></div>
+                                        <div class="col-sm-6 col-md-2"><span>190,000₫</span></div>
+                                        <div class="col-sm-6 col-md-1"><a class="remove-product" href="javascript:void(0)" onclick="deleteProductInCart(2)"><span class="glyphicon glyphicon-trash"></span></a></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="clearfix text-left">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-1">
+                                            <div><img class="img-responsive" src="../images/suaRuaMatNgheBeaumore100g.jpg" alt="Sữa rửa mặt nghệ Beaumore Mới- 100g "></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3"><a class="product-name" href="#">Sữa rửa mặt nghệ Beaumore Mới- 100g</a></div>
+                                        <div class="col-sm-6 col-md-2"><span class="product-item-discount">250,000₫</span></div>
+                                        <div class="col-sm-6 col-md-3"><input type="hidden" value="1"><input type="number" onchange="updateProductInCart(this,4)" min="1" value="2"></div>
+                                        <div class="col-sm-6 col-md-2"><span>500,000₫</span></div>
+                                        <div class="col-sm-6 col-md-1"><a class="remove-product" href="javascript:void(0)" onclick="deleteProductInCart(4)"><span class="glyphicon glyphicon-trash"></span></a></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="clearfix text-left">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-1">
+                                            <div><img class="img-responsive" src="../images/suaTamSandrasShowerGel.jpg" alt="Sữa tắm Sandras Shower Gel "></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3"><a class="product-name" href="#">Sữa tắm Sandras Shower Gel</a></div>
+                                        <div class="col-sm-6 col-md-2"><span class="product-item-discount">180,000₫</span></div>
+                                        <div class="col-sm-6 col-md-3"><input type="hidden" value="1"><input type="number" onchange="updateProductInCart(this,7)" min="1" value="3"></div>
+                                        <div class="col-sm-6 col-md-2"><span>540,000₫</span></div>
+                                        <div class="col-sm-6 col-md-1"><a class="remove-product" href="javascript:void(0)" onclick="deleteProductInCart(7)"><span class="glyphicon glyphicon-trash"></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="clearfix">
+                            <div class="col-xs-12 text-right">
+                                <p>
+                                    <span>Tổng tiền</span>
+                                    <span class="price-total">1,230,000₫</span>
+                                </p>
+                                <input type="button" name="back-shopping" class="btn btn-default" value="Tiếp tục mua sắm">
+                                <input type="button" name="checkout" class="btn btn-primary" value="Đặt hàng">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CART DIALOG -->
+        <!-- Facebook Messenger Chat -->
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                xfbml            : true,
+                version          : 'v4.0'
+            });
+            };
+            
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+            attribution=setup_tool
+            page_id="112296576811987"
+            logged_in_greeting="Chào bạn, bạn muốn mua sản phẩm nào bên GodaShop.com"
+            logged_out_greeting="Chào bạn, bạn muốn mua sản phẩm nào bên GodaShop.com">
+        </div>
+        <!-- End Facebook Messenger Chat -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </body>
+</html>
